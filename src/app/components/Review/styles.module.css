@@ -1,0 +1,43 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: #eeeeee;  */
+    width: 40vw;
+    height: 30vh;
+    border-radius: 20px;
+    position: relative;
+    padding: 1rem;
+
+    background: rgba(45, 45, 45, 0.15);
+    box-shadow: 0 4px 30px rgba(45,45,45, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    /* border: 1px solid rgba(45,45,45, 0.5); */
+}
+
+.card p{
+    color: #000000;
+    /* color: #0c0c0c; */
+    /* color: rgb(225, 225, 225); */
+
+}
+
+.text{
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 200;
+
+}
+.name{
+    font-size: 2rem;
+}
+
+.quotes{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    opacity: 0.3;
+    /* width: 10vw; */
+}
+

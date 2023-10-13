@@ -1,0 +1,81 @@
+/* #dddddd
+#ff1dce
+#0C0C0C */
+
+
+.card {
+    /* background-color: #0C0C0C; */
+    /* background: linear-gradient(225deg, rgba(255, 255, 255, 1) 0%, rgba(255, 128, 255, 1) 100%); */
+
+    /* color: #0C0C0C; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 60vh;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    transition: 150ms ease-in-out;
+}
+
+.section {
+    min-height: 100vh;
+    /* background-color: #0C0C0C; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.qr {
+    width: 20vw;
+    height: 20vw;
+}
+
+.card:hover, .mail:hover {
+    transform: scale(110%);
+    box-shadow: 0 6px 30px rgba(45,45,45, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+
+
+.bottom {}
+
+.mail {
+    transition: 150ms ease-in-out;
+    display: block;
+    /* background: linear-gradient(225deg, rgba(255, 255, 255, 1) 0%, rgba(255, 128, 255, 1) 100%); */
+
+    /* color: #0C0C0C; */
+    border-radius: 20px;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    padding: 1rem 3rem;
+}
+
+.mail, .card{
+    /* background: rgba(45, 45, 45, 0.25);
+    box-shadow: 0 4px 30px rgba(45, 45, 45, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(45, 45, 45, 0.5);
+    color: rgba(225,225,225); */
+
+    border: 1px solid rgba(45, 45, 45, 0.2);
+
+    background: rgba(45, 45, 45, 0.15);
+    box-shadow: 0 4px 30px rgba(45,45,45, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    color: #000000;
+}

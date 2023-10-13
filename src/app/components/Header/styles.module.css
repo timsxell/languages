@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  /* padding: 2rem 3rem ; */
+  /* z-index: 1; */
+  padding: 2rem 6rem;
+  height: 15vh;
+
+  background: rgba(45, 45, 45, 0.25);
+  box-shadow: 0 4px 30px rgba(45, 45, 45, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  /* border: 1px solid rgba(45, 45, 45, 0.5); */
+
+  color: #000000;
+}
+
+.name {
+  position: absolute;
+  right: 45%;
+  font-size: 2rem;
+  line-height: 100%;
+  z-index: 3;
+}
+
+.contact {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  z-index: 3;
+
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  /* Start from the middle */
+  top: 120%;
+  width: 0;
+  height: 1px;
+  /* Adjust the thickness of the underline */
+  background-color: #000000;
+  /* Adjust the color of the underline */
+  transition: width 0.3s ease, left 0.3s ease;
+  /* Add transitions for width and left */
+  transform: translateX(-50%);
+  /* Center the ::before element horizontally */
+}
+
+.contact:hover::before {
+  width: 120%;
+  /* Grow to both sides */
+  /* left: 100%;  */
+}
