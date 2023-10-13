@@ -40,6 +40,8 @@ export default function GradientComp({
         <Image src={img} className={styles.image} height={200} ref={ref} />
     ))
 
+    Component.displayName='MotionImageComponent'
+
     const MotionImage = motion(Component)
 
     function useParallax(value, distance){

@@ -27,11 +27,11 @@ export default function Page({
         gradient1.initGradient(`#gradient-canvas3`);
     })
 
-    const Component = React.forwardRef((props, ref) => (
-        <Image src={germany} className={styles.flagImage} height={200} ref={ref} />
-    ))
+    // const Component = React.forwardRef((props, ref) => (
+    //     <Image src={germany} className={styles.flagImage} height={200} ref={ref} />
+    // ))
 
-    const MotionImage = motion(Component)
+    // const MotionImage = motion(Component)
 
     function useParallax(value, distance) {
         return useTransform(value, [0, 1], [-distance, distance])
